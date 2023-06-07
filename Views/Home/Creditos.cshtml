@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Creditos";
+}
+
+<nav>
+        <img src="img/logo.png" alt="">
+        <ul>
+            <li> <a href='@Url.Action("Index","Home")'>Inicio</a> </li>
+            <li> <a href='@Url.Action("Tutorial","Home")'>Tutorial</a> </li>
+            <li> <a href="">Iniciar Juego</a> </li>
+            <li> <a href="">Pistas</a> </li>
+            <li> <a href='@Url.Action("Creditos","Home")'>Creditos</a> </li>
+        </ul>
+</nav>
+<main id="creditos">
+    <h1>Creditos</h1>
+    <section>
+    <div>
+        <img src='@Url.Content("~/img/thiago.jpg")'  alt="">
+        <h2>Thiago Lewin</h2>
+    </div>
+    <div>
+        <img src='@Url.Content("~/img/mateo.jpg")' alt="">
+        <h2>Mateo Cottet</h2>
+    </div>
+      <div>
+        <img src='@Url.Content("~/img/cofa.jpg")' alt="">
+        <h2>Guido Cohen</h2>
+    </div>
+    </section>
+</main>

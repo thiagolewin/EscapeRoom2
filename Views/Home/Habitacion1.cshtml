@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Habitacion1";
+}
+<nav>
+        <img src="img/logo.png" alt="">
+        <ul>
+            <li> <a href='@Url.Action("Index","Home")'>Inicio</a> </li>
+            <li> <a href='@Url.Action("Tutorial","Home")'>Tutorial</a> </li>
+            <li> <a href="">Iniciar Juego</a> </li>
+            <li> <a href="">Pistas</a> </li>
+            <li> <a href='@Url.Action("Creditos","Home")'>Creditos</a> </li>
+        </ul>
+</nav>
+<main id="habitacion">
+    <div class="pista">
+        <div>
+        <h3>-"Blanco y claro como el mar azulasdsadsadds"</h3>
+        <h3>-"Blanco y claro como el mar azulasdsadsadds"</h3>
+        </div>
+        <div class="separador">
+            <
+        </div>
+    </div>
+    <h1>Fase 1: "El Inicio de la Condena"</h1>
+    <img src='@Url.Content("~/img/carcel1.jpg")' alt="">
+    <h2>@ViewBag.Acertijo</h2>
+    <div>
+        <button class="botonPista">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span> Pista
+          </button>
+    </div>
+    <form action="/Home/Habitacion" method="post">
+        <h4>Respuesta:</h4>
+        <input type="hidden" value="1" name="sala">
+        <input type="text" name="clave">
+        <button type="submit" class="enviarButton">Enviar</button>
+    </form>
+</main>
+<script src='@Url.Content("~/js/script.js")'></script>

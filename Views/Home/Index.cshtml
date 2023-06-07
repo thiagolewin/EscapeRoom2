@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+    <nav>
+        <img src="img/logo.png" alt="">
+        <ul>
+            <li> <a href="">Inicio</a> </li>
+            <li> <a href='@Url.Action("Tutorial","Home")'>Tutorial</a> </li>
+            <li> <a href='@Url.Action("Comenzar","Home")'>Iniciar Juego</a> </li>
+            <li> <a href="">Pistas</a> </li>
+            <li> <a href='@Url.Action("Creditos","Home")'>Creditos</a> </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>EscapeRoom</h1>
+        <div class="main__buttons">
+            <a href=""><h3>Iniciar Juego</h3></a>
+            <a href=""><h3>Pistas</h3></a>
+        </div>
+    </main>
+    <footer></footer>

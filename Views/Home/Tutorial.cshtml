@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Tutorial";
+}
+
+    <nav>
+        <img src="img/logo.png" alt="">
+        <ul>
+            <li> <a href='@Url.Action("Index","Home")'>Inicio</a> </li>
+            <li> <a href='@Url.Action("Tutorial","Home")'>Tutorial</a> </li>
+            <li> <a href="">Iniciar Juego</a> </li>
+            <li> <a href="">Pistas</a> </li>
+            <li> <a href='@Url.Action("Creditos","Home")'>Creditos</a> </li>
+        </ul>
+    </nav>
+        <main id="tutorial">
+            <div class="pista">
+                <div>
+                    <h3>-"Blanco y claro como el mar azulasdsadsadds"</h3>
+                    <h3>-"Blanco y claro como el mar azulasdsadsadds"</h3>
+                </div>
+            </div>
+            <h1>Tutorial</h1>
+            <section>
+                <div>
+                    <h2>De que va el escape</h2>
+                    <h3>Para arrancar el juego se debe dirigir hacia "Iniciar Juego", se le dara un acertijo y tendra que resolverlo para poder pasar de habitacion</h3>
+                </div>
+                <div>
+                    <h2>Pistas</h2>
+                    <h3>Puedes usar hasta 3 pistas por habitacion, estas iran siendo cada vez mas especificas, para solicitar una toca el boton "Pista". Pero recuerda, esto se va a mostrar en las estadisticas al final </h3>
+                    <button class="botonPista">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Pista
+                    </button>
+                </div>
+                <div>
+                    <h2>Al resolverlo</h2>
+                    <h3>Una vez resuleto el acertijo, se lo mandara de manera automatica a la siguiente habitacion. El juego contiene 5 habitaciones, y al final se te mostrara todas tus estadisticas durante el juego</h3>
+                </div>
+            </section>
+        </main>
+    <script src='@Url.Content("~/js/script.js")'></script>
