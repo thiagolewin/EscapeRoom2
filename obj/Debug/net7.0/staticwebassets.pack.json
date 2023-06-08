@@ -41,10 +41,6 @@
       "PackagePath": "staticwebassets\\img\\thiago.jpg"
     },
     {
-      "Id": "C:\\Users\\47168146\\Downloads\\SalaDeEscape\\wwwroot\\js\\script.js",
-      "PackagePath": "staticwebassets\\js\\script.js"
-    },
-    {
       "Id": "C:\\Users\\47168146\\Downloads\\SalaDeEscape\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -275,6 +271,26 @@
     {
       "Id": "C:\\Users\\47168146\\Downloads\\SalaDeEscape\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\47168146\\Downloads\\SalaDeEscape\\wwwroot\\vid\\Cadena.mp4",
+      "PackagePath": "staticwebassets\\vid\\Cadena.mp4"
+    },
+    {
+      "Id": "C:\\Users\\47168146\\Downloads\\SalaDeEscape\\wwwroot\\vid\\Celda.mp4",
+      "PackagePath": "staticwebassets\\vid\\Celda.mp4"
+    },
+    {
+      "Id": "C:\\Users\\47168146\\Downloads\\SalaDeEscape\\wwwroot\\vid\\Llave.mp4",
+      "PackagePath": "staticwebassets\\vid\\Llave.mp4"
+    },
+    {
+      "Id": "C:\\Users\\47168146\\Downloads\\SalaDeEscape\\wwwroot\\vid\\Muro.mp4",
+      "PackagePath": "staticwebassets\\vid\\Muro.mp4"
+    },
+    {
+      "Id": "C:\\Users\\47168146\\Downloads\\SalaDeEscape\\wwwroot\\vid\\Puente.mp4",
+      "PackagePath": "staticwebassets\\vid\\Puente.mp4"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.SalaDeEscape.Microsoft.AspNetCore.StaticWebAssets.props",
