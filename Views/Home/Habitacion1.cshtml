@@ -14,8 +14,11 @@
 <main id="habitacion">
     <div class="pista">
         <div>
-        <h3>-"Blanco y claro como el mar azulasdsadsadds"</h3>
-        <h3>-"Blanco y claro como el mar azulasdsadsadds"</h3>
+        @{
+            for (int i = 0; i< @ViewBag.Pistas.Length;i++) {
+                <h3 style="display: none">@ViewBag.Pistas[i]</h3>
+            }
+        }
         </div>
         <div class="separador">
             <

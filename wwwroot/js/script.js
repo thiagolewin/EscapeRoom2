@@ -4,7 +4,10 @@ const main = document.querySelector("main")
 const separador = document.querySelector(".separador")
 button.addEventListener("click",()=>{
     pista.style.display = "flex"
-    pista.style.left = 0
+    pista.style.left = 200
+    console.log("a")
+    console.log(pista.children[0].children[1])
+    pista.children[0].children[1].style.display = "block"
 })
 pista.children[1].addEventListener("click",()=>{
     separador.style.height = pista.clientHeight + "px"
