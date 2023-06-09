@@ -32,6 +32,7 @@ public class HomeController : Controller
     }
     public IActionResult Comenzar()
     {
+        
         int proxHabitacion = Escape.GetEstadoJuego();
         ViewBag.Pistas=Escape.GetPistas(proxHabitacion- 1);
         ViewBag.Acertijo = Escape.GetAcertijos(proxHabitacion-1);
@@ -52,16 +53,24 @@ public class HomeController : Controller
         if (string.IsNullOrEmpty(clave)) {
             clave = "";
         }
-        if (Escape.ResolverSala(sala,clave)) {
             int proxHabitacion = Escape.GetEstadoJuego();
             ViewBag.Pistas=Escape.GetPistas(proxHabitacion- 1);
             ViewBag.Acertijo = Escape.GetAcertijos(proxHabitacion-1);
             ViewBag.Titulo = Escape.GetTitulo(proxHabitacion-1);
             string video = Escape.incognitasSalas[Escape.GetEstadoJuego()-1];
             ViewBag.Video = "~/vid/"+video+".mp4";
+        
+        if (Escape.ResolverSala(sala,clave)) {
+           
             if(Escape.GetEstadoJuego() == 6) {
                 return View("Ganador");
             }
+            proxHabitacion = Escape.GetEstadoJuego();
+            ViewBag.Pistas=Escape.GetPistas(proxHabitacion- 1);
+            ViewBag.Acertijo = Escape.GetAcertijos(proxHabitacion-1);
+            ViewBag.Titulo = Escape.GetTitulo(proxHabitacion-1);
+            video = Escape.incognitasSalas[Escape.GetEstadoJuego()-1];
+            ViewBag.Video = "~/vid/"+video+".mp4";
             return View("Habitacion"+Escape.GetEstadoJuego());
         } else {
             return View("Habitacion"+Escape.GetEstadoJuego());

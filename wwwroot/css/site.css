@@ -273,6 +273,30 @@ main .main__buttons a:hover {
 .pista h3:last-child {
     margin-bottom: 0;
 }
+#mainGanador {
+  overflow: hidden;
+  position: relative;
+  justify-content: initial;
+}
+#mainGanador h1 {
+  margin-top: 250px;
+}
+#mainGanador button {
+  margin-top: 100px;
+  font-size: 2em;
+}
+.confetiIzquierda {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+}
+.confetiDerecha {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+}
 @keyframes AparecerPista {
     100% {
         margin-left: 0;
@@ -396,4 +420,26 @@ main .main__buttons a:hover {
    span:nth-child(2) {
     transition: none;
     transition-delay: none;
+   }
+   #reiniciar {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #d5f365;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+   }
+   
+   #reiniciar:hover {
+    box-shadow: 7px 5px 56px -14px #C3D900;
+   }
+   
+   #reiniciar:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #C3D900;
    }

@@ -1,8 +1,11 @@
 ﻿const button = document.querySelector(".botonPista")
 const pista = document.querySelector(".pista")
-const main = document.querySelector("main")
+const main = document.querySelector("#mainGanador")
+const nav = document.querySelector("nav")
+main.style.height = window.innerHeight - nav.clientHeight -1 + "px";
 const separador = document.querySelector(".separador")
 let n = 0;
+console.log("a")
 function ShowPista() {
     pista.style.display = "flex"
     pista.style.left = 200

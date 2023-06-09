@@ -53,7 +53,6 @@ static public class Escape {
             acertijo[4] = "Cuando más grande, más pequeño se vuelve, pero si lo derrumbas, todos se alegrarán. ¿Qué es?";
         }
     }
-
     public static string[] GetPistas(int sala)
     {
         return pistaSalas[sala];

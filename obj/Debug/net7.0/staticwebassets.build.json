@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Io+fkwSYntWjPougfa7qHvMG83vEMp8nZsqsBRhlojY=",
+  "Hash": "XIzDalFP2wUA1xf2V/rkR8f7bGmletfof5VZJ5Wbxh0=",
   "Source": "SalaDeEscape",
   "BasePath": "_content/SalaDeEscape",
   "Mode": "Default",
@@ -1222,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\vid\\Celda.mp4"
+    },
+    {
+      "Identity": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\vid\\confeti.gif",
+      "SourceId": "SalaDeEscape",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\",
+      "BasePath": "_content/SalaDeEscape",
+      "RelativePath": "vid/confeti.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\vid\\confeti.gif"
     },
     {
       "Identity": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\vid\\Llave.mp4",
