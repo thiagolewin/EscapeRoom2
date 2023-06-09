@@ -9,65 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SalaDeEscape
 build_property.RootNamespace = SalaDeEscape
-build_property.ProjectDir = C:\Users\47168146\Downloads\SalaDeEscape\
+build_property.ProjectDir = C:\Users\47393575\Downloads\EscapeRoom2\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\47168146\Downloads\SalaDeEscape
+build_property.MSBuildProjectDirectory = C:\Users\47393575\Downloads\EscapeRoom2
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Home/Creditos.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Home/Creditos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVkaXRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Home/Ganador.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Home/Ganador.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHYW5hZG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Home/Habitacion1.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Home/Habitacion1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uMS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Home/Habitacion2.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Home/Habitacion2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Home/Habitacion3.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Home/Habitacion3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uMy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Home/Habitacion4.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Home/Habitacion4.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uNC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Home/Habitacion5.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Home/Habitacion5.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uNS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Home/Index.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Home/Tutorial.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Home/Tutorial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUdXRvcmlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Shared/Error.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/_ViewImports.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/_ViewStart.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/47168146/Downloads/SalaDeEscape/Views/Shared/_Layout.cshtml]
+[C:/Users/47393575/Downloads/EscapeRoom2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8ly87e49kk
