@@ -57,6 +57,9 @@ static public class Escape {
     {
         return pistaSalas[sala];
     }
+    public static void IniciarJuego() {
+        estadoJuego = 1;
+    }
     public static string GetAcertijos(int sala) {
         return acertijo[sala];
     }

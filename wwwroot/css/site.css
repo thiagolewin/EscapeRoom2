@@ -443,3 +443,40 @@ main .main__buttons a:hover {
     transform: scale(0.97);
     box-shadow: 7px 5px 56px -10px #C3D900;
    }
+   #pistas h1 {
+    animation: none;
+   }
+   #pistas section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: rgba(48, 48, 48, 0.678);
+   }
+   #pistas section div {
+    width: 100%;
+    border: white solid 1px;
+   }
+   #pistas section div:hover {
+    background-color: #212121;
+    transform: scale(1.05);
+   }
+   #pistas section div h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    padding: 10px;
+    color: white;
+    position: relative;
+    padding-left: 40px;
+   }
+   #pistas section div h2::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-left: 20px;
+    border-radius: 500px;
+    background-color: #32c766;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+   }

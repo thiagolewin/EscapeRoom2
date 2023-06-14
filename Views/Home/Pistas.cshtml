@@ -1,5 +1,5 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Pistas";
 }
     <nav>
         <img src="img/logo.png" alt="">
@@ -8,15 +8,14 @@
             <li> <a href='@Url.Action("Tutorial","Home")'>Tutorial</a> </li>
             <li> <a href='@Url.Action("Comenzar","Home")'>Iniciar Juego</a> </li>
             <li> <a href='@Url.Action("Continuar","Home")'>Continuar Juego</a> </li>
-            <li> <a href='@Url.Action("Pistas","Home")'>Pistas</a> </li>
+            <li> <a href="">Pistas</a> </li>
             <li> <a href='@Url.Action("Creditos","Home")'>Creditos</a> </li>
         </ul>
     </nav>
-    <main>
-        <h1>EscapeRoom</h1>
-        <div class="main__buttons">
-            <a href='@Url.Action("Comenzar","Home")'><h3>Iniciar Juego</h3></a>
-            <a href='@Url.Action("Continuar","Home")'><h3>Continuar</h3></a>
-        </div>
+    <main id="pistas">
+        <h1>PISTAS</h1>
+        <section>
+            <p>@ViewBag.Pistas[0]</p>
+        </section>
     </main>
     <footer></footer>
