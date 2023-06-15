@@ -17,7 +17,7 @@
 <main id="habitacion">
     <div class="pista" style="left: 0;">
         <div>
-        @{
+        @{  
             for (int i = 0; i< @ViewBag.Pistas.Length;i++) {
                 <h3 style="display: none">@ViewBag.Pistas[i]</h3>
             }
@@ -33,8 +33,10 @@
         <h4>Respuesta:</h4>
         <input type="hidden" value="5" name="sala">
         <input type="text" name="clave" autocomplete="off">
+        <input type="hidden" value="" name="timer" class="inputTimer">
         <button type="submit" class="enviarButton">Enviar</button>
     </form>
+    @if (@ViewBag.Error != null) {<h5>@ViewBag.Error</h5>}
         <div>
         <button class="botonPista" onclick="ShowPista()">
             <span></span>
@@ -43,6 +45,16 @@
             <span></span> Pista
           </button>
     </div>
+    <article class="ContadorVidas">
+        <div class="contador">
+            <h2 id="contadorTiempo">@ViewBag.timer</h2>
+        </div>
+        <div class="vida">
+            <img src='@Url.Content("~/img/corazon.png")' alt="">
+            <h3>@ViewBag.Vidas</h3>
+        </div>
+    </article>
 </main>
+
 
 
