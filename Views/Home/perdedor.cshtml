@@ -1,6 +1,7 @@
 @{
-    ViewData["Title"] = "Ganador";
+    ViewData["Title"] = "Perdedor";
 }
+    <video src='@Url.Content("~/vid/carcel.mp4")'autoplay loop></video>
   <nav>
         <img src="img/logo.png" alt="">
         <ul>
@@ -13,9 +14,7 @@
         </ul>
     </nav>
     <main id="mainGanador">
-        <img src='@Url.Content("~/vid/confeti.gif")' alt="" class="confetiIzquierda">
-         <img src='@Url.Content("~/vid/confeti.gif")' alt="" class="confeti confetiDerecha">
-        <h1>¡GANASTE!</h1>
+            <h1 style="color: red;">¡PERDISTE!</h1>
             <a href='@Url.Action("Comenzar","Home")'><button id="reiniciar"><strong>Reiniciar</strong></button></a> 
     </main>
     <footer></footer>

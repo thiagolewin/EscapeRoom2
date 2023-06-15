@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XIzDalFP2wUA1xf2V/rkR8f7bGmletfof5VZJ5Wbxh0=",
+  "Hash": "6q51Wu464MTq2KW0VG0K0qXl8PBIHVTiLlfyKwfa8TQ=",
   "Source": "SalaDeEscape",
   "BasePath": "_content/SalaDeEscape",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\cofa.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\img\\corazon.png",
+      "SourceId": "SalaDeEscape",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\",
+      "BasePath": "_content/SalaDeEscape",
+      "RelativePath": "img/corazon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\corazon.png"
     },
     {
       "Identity": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\img\\lupa.png",
@@ -1205,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\vid\\Cadena.mp4"
+    },
+    {
+      "Identity": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\vid\\carcel.mp4",
+      "SourceId": "SalaDeEscape",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\",
+      "BasePath": "_content/SalaDeEscape",
+      "RelativePath": "vid/carcel.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\vid\\carcel.mp4"
     },
     {
       "Identity": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\vid\\Celda.mp4",

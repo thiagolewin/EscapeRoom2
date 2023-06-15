@@ -2,10 +2,11 @@ using System.Collections.Generic;
 static public class Escape {
     public static string[] incognitasSalas {get; private set;} = new string[5];
     public static string[] titulos {get;private set;} = new string[5];
+    public static int errores {get;private set;} = 0;
     public static Dictionary<int,string[]> pistaSalas {get; private set;} = new Dictionary<int,string[]>();
     public static string[] acertijo = new string[5];
     public static int estadoJuego {get; private set;} = 1;
-
+    public static string timer {get;set;} = "00:00:00";
     private static void InicializarJuego() {
         if (pistaSalas.Count()==0)
         {
@@ -53,12 +54,36 @@ static public class Escape {
             acertijo[4] = "Cuando más grande, más pequeño se vuelve, pero si lo derrumbas, todos se alegrarán. ¿Qué es?";
         }
     }
+
+    public static bool Error() {
+        bool perder = false;
+        errores++;
+        if (errores == 3) {
+            perder = true;
+        }
+        return perder;
+    }
+    public static Dictionary<int,string[]> GetAllPistas(int hab)
+    {
+        Dictionary<int,string[]> pistas = new Dictionary<int,string[]>();
+        foreach (KeyValuePair<int, string[]> pair in pistaSalas)
+        {
+            if(pair.Key < hab) {
+            pistas[pair.Key] = pair.Value;
+            }
+        }
+        return pistas;
+    }
+
     public static string[] GetPistas(int sala)
     {
+
         return pistaSalas[sala];
     }
     public static void IniciarJuego() {
         estadoJuego = 1;
+        errores = 0;
+        timer = "00:00:00";
     }
     public static string GetAcertijos(int sala) {
         return acertijo[sala];
@@ -72,16 +97,16 @@ static public class Escape {
         }
         return estadoJuego;
     }
-    public static bool ResolverSala(int sala, string incognita) {
+    public static string ResolverSala(int sala, string incognita) {
         int salaActual = GetEstadoJuego();
-        if (sala> salaActual) {
-            return false;
+        if (sala> salaActual || sala < salaActual) {
+            return "Sala incorrecta";
         } else {
             if (incognita.ToLower() == incognitasSalas[sala-1].ToLower()) {
                 estadoJuego++;
-                return true;
+                return "true";
             } else {
-                return false;
+                return "Error en la respuesta";
             }
         }
     }

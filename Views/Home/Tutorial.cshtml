@@ -1,14 +1,14 @@
 @{
     ViewData["Title"] = "Tutorial";
 }
-
-    <nav>
+ <nav>
         <img src="img/logo.png" alt="">
         <ul>
             <li> <a href='@Url.Action("Index","Home")'>Inicio</a> </li>
             <li> <a href='@Url.Action("Tutorial","Home")'>Tutorial</a> </li>
-            <li> <a href="">Iniciar Juego</a> </li>
-            <li> <a href="">Pistas</a> </li>
+            <li> <a href='@Url.Action("Comenzar","Home")'>Iniciar Juego</a> </li>
+            <li> <a href='@Url.Action("Continuar","Home")'>Continuar Juego</a> </li>
+            <li> <a href='@Url.Action("Pistas","Home")'>Pistas</a> </li>
             <li> <a href='@Url.Action("Creditos","Home")'>Creditos</a> </li>
         </ul>
     </nav>
@@ -28,12 +28,12 @@
                 <div>
                     <h2>Pistas</h2>
                     <h3>Puedes usar hasta 3 pistas por habitacion, estas iran siendo cada vez mas especificas, para solicitar una toca el boton "Pista". Pero recuerda, esto se va a mostrar en las estadisticas al final </h3>
-                    <button class="botonPista">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span> Pista
-                    </button>
+                      <button class="botonPista" onclick="ShowPista()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span> Pista
+          </button>
                 </div>
                 <div>
                     <h2>Al resolverlo</h2>

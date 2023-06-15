@@ -178,13 +178,13 @@ main .main__buttons a:hover {
   flex-direction: column;
 }
 #habitacion h1 {
-  margin-top: 150px;
+  margin-top: 120px;
   font-size: 3em;
   color: white;
   background-color: rgba(204, 151, 37, 0.8);
   animation: none;
   padding: 10px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 #habitacion h2 {
   color: #32c766;
@@ -198,10 +198,6 @@ main .main__buttons a:hover {
   padding: 0.8em 2em;
   font-size: 1.5em;
 
-}
-#habitacion img {
-  width: 400px;
-  height: 200px;
 }
 #habitacion form {
     display: flex;
@@ -226,7 +222,12 @@ main .main__buttons a:hover {
   background-color: #32c766;
   border-radius: 5px;
   color: white;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+#habitacion h5 {
+  color: red;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 .pista {
     background-color: #1c2230;
@@ -296,6 +297,47 @@ main .main__buttons a:hover {
   height: 100%;
   right: 0;
   bottom: 0;
+}
+.ContadorVidas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.contador {
+  width: 450px;
+  height: 75px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.contador #contadorTiempo {
+  color: red;
+  background-color: initial;
+  margin: 0;
+  font-size: 2.5em;
+  color: black;
+}
+.vida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+.vida img {
+  width: 50px;
+  height: 50px;
+}
+.vida h3 {
+  position: absolute;
+  top: 25%;
+  color: white;
+  font-size: 1.2em;
 }
 @keyframes AparecerPista {
     100% {
@@ -450,11 +492,14 @@ main .main__buttons a:hover {
     display: flex;
     flex-direction: column;
     width: 80%;
-    background-color: rgba(48, 48, 48, 0.678);
+
    }
    #pistas section div {
     width: 100%;
     border: white solid 1px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.2s;
    }
    #pistas section div:hover {
     background-color: #212121;

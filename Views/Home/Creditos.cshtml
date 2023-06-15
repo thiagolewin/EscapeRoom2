@@ -2,16 +2,17 @@
     ViewData["Title"] = "Creditos";
 }
 
-<nav>
+  <nav>
         <img src="img/logo.png" alt="">
         <ul>
             <li> <a href='@Url.Action("Index","Home")'>Inicio</a> </li>
             <li> <a href='@Url.Action("Tutorial","Home")'>Tutorial</a> </li>
-            <li> <a href="">Iniciar Juego</a> </li>
-            <li> <a href="">Pistas</a> </li>
+            <li> <a href='@Url.Action("Comenzar","Home")'>Iniciar Juego</a> </li>
+            <li> <a href='@Url.Action("Continuar","Home")'>Continuar Juego</a> </li>
+            <li> <a href='@Url.Action("Pistas","Home")'>Pistas</a> </li>
             <li> <a href='@Url.Action("Creditos","Home")'>Creditos</a> </li>
         </ul>
-</nav>
+    </nav>
 <main id="creditos">
     <h1>Creditos</h1>
     <section>

@@ -3,16 +3,17 @@
     string rute = ViewBag.Video;
 }
 <video src='@Url.Content(rute)'autoplay loop></video>
-<nav>   
+  <nav>
         <img src="img/logo.png" alt="">
         <ul>
             <li> <a href='@Url.Action("Index","Home")'>Inicio</a> </li>
             <li> <a href='@Url.Action("Tutorial","Home")'>Tutorial</a> </li>
             <li> <a href='@Url.Action("Comenzar","Home")'>Iniciar Juego</a> </li>
+            <li> <a href='@Url.Action("Continuar","Home")'>Continuar Juego</a> </li>
             <li> <a href='@Url.Action("Pistas","Home")'>Pistas</a> </li>
             <li> <a href='@Url.Action("Creditos","Home")'>Creditos</a> </li>
         </ul>
-</nav>
+    </nav>
 <main id="habitacion">
     <div class="pista" style="left: 0;">
         <div>
@@ -32,8 +33,10 @@
         <h4>Respuesta:</h4>
         <input type="hidden" value="1" name="sala">
         <input type="text" name="clave" autocomplete="off">
+        <input type="hidden" value="" name="timer" class="inputTimer">
         <button type="submit" class="enviarButton">Enviar</button>
     </form>
+    @if (@ViewBag.Error != null) {<h5>@ViewBag.Error</h5>}
         <div>
         <button class="botonPista" onclick="ShowPista()">
             <span></span>
@@ -42,6 +45,15 @@
             <span></span> Pista
           </button>
     </div>
+    <article class="ContadorVidas">
+        <div class="contador">
+            <h2 id="contadorTiempo">@ViewBag.timer</h2>
+        </div>
+        <div class="vida">
+            <img src='@Url.Content("~/img/corazon.png")' alt="">
+            <h3>@ViewBag.Vidas</h3>
+        </div>
+    </article>
 </main>
 
 

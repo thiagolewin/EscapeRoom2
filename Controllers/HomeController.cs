@@ -30,31 +30,29 @@ public class HomeController : Controller
     {
         Escape.IniciarJuego();
         int proxHabitacion = Escape.GetEstadoJuego();
+        ViewBag.Timer = Escape.timer;
         ViewBag.Pistas=Escape.GetPistas(proxHabitacion- 1);
         ViewBag.Acertijo = Escape.GetAcertijos(proxHabitacion-1);
         ViewBag.Titulo = Escape.GetTitulo(proxHabitacion-1);
+        ViewBag.Vidas = 3-Escape.errores;
         string video = Escape.incognitasSalas[Escape.GetEstadoJuego()-1];
         ViewBag.Video = "~/vid/"+video+".mp4";
         return View("Habitacion"+proxHabitacion);
     }
     public IActionResult Continuar() {
         int proxHabitacion = Escape.GetEstadoJuego();
+        ViewBag.Timer = Escape.timer;
         ViewBag.Pistas=Escape.GetPistas(proxHabitacion- 1);
         ViewBag.Acertijo = Escape.GetAcertijos(proxHabitacion-1);
         ViewBag.Titulo = Escape.GetTitulo(proxHabitacion-1);
+        ViewBag.Vidas = 3-Escape.errores;
         string video = Escape.incognitasSalas[Escape.GetEstadoJuego()-1];
         ViewBag.Video = "~/vid/"+video+".mp4";
         return View("Habitacion"+proxHabitacion);
     }
     public IActionResult Pistas() {
+        ViewBag.Pistas = Escape.GetAllPistas(Escape.GetEstadoJuego());
         return View("Pistas");
-        List <string[]> ListaPistas = new List <string[]>();
-        for (int i = 0;i<Escape.GetEstadoJuego();i++) {
-            ListaPistas[i] = Escape.GetPistas(i);
-        }
-   
-        ViewBag.Pistas[0] = "Escape.GetPistas(0)";
-        
     }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
@@ -62,7 +60,7 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
     
-    [HttpPost] public IActionResult Habitacion(int sala, string clave) {
+    [HttpPost] public IActionResult Habitacion(int sala, string clave, string timer) {
         if (string.IsNullOrEmpty(clave)) {
             clave = "";
         }
@@ -72,23 +70,39 @@ public class HomeController : Controller
             ViewBag.Titulo = Escape.GetTitulo(proxHabitacion-1);
             string video = Escape.incognitasSalas[Escape.GetEstadoJuego()-1];
             ViewBag.Video = "~/vid/"+video+".mp4";
-        
-        if (Escape.ResolverSala(sala,clave)) {
+            string error = Escape.ResolverSala(sala,clave);
+        if (error == "Sala incorrecta") {
+                Escape.timer = timer;
+                ViewBag.Timer = Escape.timer;
+                return View("Habitacion"+Escape.GetEstadoJuego());
+        }
+        if (error == "true") {
            
             if(Escape.GetEstadoJuego() == 6) {
                 return View("Ganador");
             }
+            Escape.timer = timer;
+            ViewBag.Timer = Escape.timer;
             proxHabitacion = Escape.GetEstadoJuego();
             ViewBag.Pistas=Escape.GetPistas(proxHabitacion- 1);
             ViewBag.Acertijo = Escape.GetAcertijos(proxHabitacion-1);
             ViewBag.Titulo = Escape.GetTitulo(proxHabitacion-1);
+            ViewBag.Vidas = 3-Escape.errores;
             video = Escape.incognitasSalas[Escape.GetEstadoJuego()-1];
             ViewBag.Video = "~/vid/"+video+".mp4";
             return View("Habitacion"+Escape.GetEstadoJuego());
         } else {
-            return View("Habitacion"+Escape.GetEstadoJuego());
+                if(Escape.Error()) {
+                    return View("perdedor");
+                }
+                Escape.timer = timer;
+                ViewBag.Timer = Escape.timer;
+                ViewBag.Error = error;
+                ViewBag.Vidas = 3-Escape.errores;
+                return View("Habitacion"+Escape.GetEstadoJuego());
+            }
         }
     }
 
     
-}
+

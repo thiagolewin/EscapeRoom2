@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\img\\cofa.jpg"
     },
     {
+      "Id": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\img\\corazon.png",
+      "PackagePath": "staticwebassets\\img\\corazon.png"
+    },
+    {
       "Id": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\img\\lupa.png",
       "PackagePath": "staticwebassets\\img\\lupa.png"
     },
@@ -291,6 +295,10 @@
     {
       "Id": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\vid\\Puente.mp4",
       "PackagePath": "staticwebassets\\vid\\Puente.mp4"
+    },
+    {
+      "Id": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\vid\\carcel.mp4",
+      "PackagePath": "staticwebassets\\vid\\carcel.mp4"
     },
     {
       "Id": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\wwwroot\\vid\\confeti.gif",
