@@ -2,6 +2,8 @@
 const pista = document.querySelector(".pista")
 const main = document.querySelector("#mainGanador")
 const nav = document.querySelector("nav")
+let pistasUsadas = document.querySelector(".pistas")
+let pistasUsadasPagina = 0
 let horas = 0
 let minutos = 0
 let segundos = 0;
@@ -13,6 +15,11 @@ console.log("a")
 const separador = document.querySelector(".separador")
 let n = 0;
 function ShowPista() {
+    pistasUsadasPagina++
+    console.log(pistasUsadas.value)
+    if(pistasUsadasPagina <3) {
+        pistasUsadas.value = parseInt(pistasUsadas.value) +1
+    }
     pista.style.display = "flex"
     pista.style.left = 200
     pista.style.left = "0px"

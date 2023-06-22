@@ -7,6 +7,9 @@ static public class Escape {
     public static string[] acertijo = new string[5];
     public static int estadoJuego {get; private set;} = 1;
     public static string timer {get;set;} = "00:00:00";
+    public static string pistasUsadas {get;set;} = "0";
+    public static string usuarioActivo {get;set;} = "";
+    private static Dictionary<string,string[]> dicUsuarios = new Dictionary<string, string[]>();
     private static void InicializarJuego() {
         if (pistaSalas.Count()==0)
         {
@@ -55,6 +58,20 @@ static public class Escape {
         }
     }
 
+    public static void setUsuarios() {
+            string[] usuario = new string[3];
+            usuario[0] = usuarioActivo;
+            usuario[1] = pistasUsadas;
+            usuario[2] = timer;
+        if (dicUsuarios.ContainsKey(usuarioActivo)) {
+            dicUsuarios[usuarioActivo] = usuario;
+        } else {
+            dicUsuarios.Add(usuarioActivo,usuario);
+        }
+    }
+    public static Dictionary<string,string[]> getUsuarios() {
+        return dicUsuarios;
+    }
     public static bool Error() {
         bool perder = false;
         errores++;

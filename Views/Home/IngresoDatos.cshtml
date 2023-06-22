@@ -1,7 +1,8 @@
 @{
-    ViewData["Title"] = "Ganador";
+    ViewData["Title"] = "IngresoDatos";
 }
- <nav>
+
+   <nav>
         <img src="img/logo.png" alt="">
         <ul>
             <li> <a href='@Url.Action("Index","Home")'>Inicio</a> </li>
@@ -12,12 +13,15 @@
             <li> <a href='@Url.Action("Creditos","Home")'>Creditos</a> </li>
         </ul>
     </nav>
-    <main id="mainGanador">
-        <img src='@Url.Content("~/vid/confeti.gif")' alt="" class="confetiIzquierda">
-         <img src='@Url.Content("~/vid/confeti.gif")' alt="" class="confeti confetiDerecha">
-        <h1>¡GANASTE!</h1>
-        <a href='@Url.Action("Iniciar","Home")'><button id="reiniciar"><strong>Reiniciar</strong></button></a> 
-        <article id="TablaDatos">
+<main id="creditos">
+     <form action='@Url.Action("Comenzar","Home")' method="post" class="formUsuario">
+        <h4>Usuario</h4>
+        <input type="text" value="" required name="usuario" autocomplete="off">
+        <button type="submit" class="enviarForm">
+            Enviar
+        </button>
+    </form>
+  <article id="TablaDatos">
         <h3>Nombre</h3>
         <h3>Pistas usadas</h3>
         <h3>Tiempo</h3>
@@ -31,5 +35,4 @@
             }
         }
     </article>
-    </main>
-    <footer></footer>
+</main>

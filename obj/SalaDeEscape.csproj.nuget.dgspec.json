@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\SalaDeEscape.csproj": {}
+    "C:\\Users\\47393575\\EscapeRoom2\\SalaDeEscape.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\SalaDeEscape.csproj": {
+    "C:\\Users\\47393575\\EscapeRoom2\\SalaDeEscape.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\SalaDeEscape.csproj",
+        "projectUniqueName": "C:\\Users\\47393575\\EscapeRoom2\\SalaDeEscape.csproj",
         "projectName": "SalaDeEscape",
-        "projectPath": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\SalaDeEscape.csproj",
+        "projectPath": "C:\\Users\\47393575\\EscapeRoom2\\SalaDeEscape.csproj",
         "packagesPath": "C:\\Users\\47393575\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47393575\\Downloads\\EscapeRoom2\\obj\\",
+        "outputPath": "C:\\Users\\47393575\\EscapeRoom2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

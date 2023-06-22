@@ -3,12 +3,12 @@
     string rute = ViewBag.Video;
 }
 <video src='@Url.Content(rute)'autoplay loop></video>
-  <nav>
+<nav>
         <img src="img/logo.png" alt="">
         <ul>
             <li> <a href='@Url.Action("Index","Home")'>Inicio</a> </li>
             <li> <a href='@Url.Action("Tutorial","Home")'>Tutorial</a> </li>
-            <li> <a href='@Url.Action("Comenzar","Home")'>Iniciar Juego</a> </li>
+            <li> <a href='@Url.Action("Iniciar","Home")'>Iniciar Juego</a> </li>
             <li> <a href='@Url.Action("Continuar","Home")'>Continuar Juego</a> </li>
             <li> <a href='@Url.Action("Pistas","Home")'>Pistas</a> </li>
             <li> <a href='@Url.Action("Creditos","Home")'>Creditos</a> </li>
@@ -34,6 +34,7 @@
         <input type="hidden" value="2" name="sala">
         <input type="text" name="clave" autocomplete="off">
         <input type="hidden" value="" name="timer" class="inputTimer">
+        <input type="hidden" value= @ViewBag.PistasUsadas name="pistas" class="pistas">
         <button type="submit" class="enviarButton">Enviar</button>
     </form>
     @if (@ViewBag.Error != null) {<h5>@ViewBag.Error</h5>}
