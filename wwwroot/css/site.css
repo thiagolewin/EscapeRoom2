@@ -195,7 +195,7 @@ main .main__buttons a:hover {
   margin-bottom: 80px;
 }
 #habitacion .botonPista {
-  padding: 0.8em 2em;
+  padding: 0.5em 1em;
   font-size: 1.5em;
 
 }
@@ -217,8 +217,8 @@ main .main__buttons a:hover {
   margin-bottom: 20px;
 }
 #habitacion form .enviarButton {
-  width: 140px;
-  height: 50px;
+  padding: 0.8em 2em;
+  font-size: 1.5em;
   background-color: #32c766;
   border-radius: 5px;
   color: white;
